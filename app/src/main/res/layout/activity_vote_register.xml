@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoteRegisterActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You Voted For : "
+            android:textColor="@color/purple_200"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/voteTv"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_rect02"
+            android:drawableStart="@drawable/ic_person_grey"
+            android:drawablePadding="5dp"
+            android:hint="Full Name"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/phoneEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameEt"
+            android:hint="Phone"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_phone_grey"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"
+            android:inputType="phone"
+            android:background="@drawable/shape_rect02"/>
+
+        <LinearLayout
+            android:id="@+id/addressL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/phoneEt"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/countryEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:inputType="textPostalAddress"
+                android:background="@drawable/shape_rect02"/>
+
+            <EditText
+                android:id="@+id/stateEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:inputType="textPostalAddress"
+                android:background="@drawable/shape_rect02"/>
+
+            <EditText
+                android:id="@+id/cityEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location_grey"
+                android:drawablePadding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:inputType="textPostalAddress"
+                android:background="@drawable/shape_rect02"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressL1"
+            android:hint="Complete Address"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_location_grey"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"
+            android:inputType="textPostalAddress|textMultiLine"
+            android:background="@drawable/shape_rect02"/>
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressEt"
+            android:hint="Email"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_mail_grey"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape_rect02"/>
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEt"
+            android:hint="Password"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_lock_grey"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_rect02"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cnfvote"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/background_btn"
+            android:text="CONFIRM"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
